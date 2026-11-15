@@ -1,0 +1,16 @@
+*
+!/.gitignore
+!/AGENTS.md
+!/settings.json
+!/sandbox.json
+!/subagents.json
+!/extensions/
+!/extensions/pi-permission-system/
+!/extensions/pi-permission-system/config.json
+!/agents/
+!/agents/*.md
+!/docs/
+!/docs/*.md
+!/.githooks/
+!/.githooks/pre-commit
+# Root ignore is deliberate: no auth, sessions, logs, packages, tmp or binaries.

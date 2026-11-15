@@ -1,0 +1,19 @@
+#!/usr/bin/env python3
+import re, subprocess, sys
+allowed = {'.gitignore', 'AGENTS.md', 'settings.json', 'sandbox.json',
+           'subagents.json', 'extensions/pi-permission-system/config.json',
+           '.githooks/pre-commit'}
+paths = subprocess.check_output(['git', 'ls-files', '--stage', '-z'])
+secret = re.compile(rb'-----BEGIN [A-Z ]*PRIVATE KEY-----|gh[pousr]_[A-Za-z0-9_]{12,}|'
+                    rb'(?:api[_-]?key|access[_-]?token|client[_-]?secret)\s*[=:]\s*["\']?[A-Za-z0-9_\-]{16,}', re.I)
+for record in paths.split(b'\0'):
+    if not record: continue
+    meta, raw_path = record.split(b'\t', 1)
+    mode = meta.split(b' ', 1)[0]
+    name = raw_path.decode('utf-8', 'surrogateescape')
+    permitted = name in allowed or (name.startswith('agents/') and name.endswith('.md') and '/' not in name[7:]) or (name.startswith('docs/') and name.endswith('.md') and '/' not in name[5:])
+    if not permitted or mode not in (b'100644', b'100755') or (mode == b'100755' and name != '.githooks/pre-commit'):
+        sys.exit(f'BLOCKED index path or mode: {name}')
+    blob = subprocess.check_output(['git', 'show', ':'+name])
+    if b'\0' in blob or secret.search(blob):
+        sys.exit(f'BLOCKED possible binary/credential: {name}; inspect offline')
