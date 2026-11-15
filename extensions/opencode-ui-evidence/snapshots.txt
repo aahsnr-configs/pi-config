@@ -1,0 +1,101 @@
+60x18
+
+╭──────────────────────────────────────────────────────────╮
+┃_pi:fc _pi:/fc Ask anything…  "Fix a TODO in the codebase"             │
+┃                                                          │
+╰ Chat · Fixture · high                                    ╯
+[1 spacer rows]
+/tmp/opencode-ui-check/pro...  Cost —  ·  Context 18% / 200k
+
+80x24
+
+
+
+
+
+
+                               ╭────── ✦ ───────╮
+                               │      ▀▀█       │
+                               │      █▀ █      │
+                               ╰────────────────╯
+
+╭──────────────────────────────────────────────────────────────────────────────╮
+┃_pi:fc _pi:/fc Ask anything…  "Fix a TODO in the codebase"                                 │
+┃                                                                              │
+╰ Chat · Fixture · high                                                        ╯
+[3 spacer rows]
+/tmp/opencode-ui-check/project                     Cost —  ·  Context 18% / 200k
+
+100x30
+
+
+
+
+
+
+
+
+                                         ╭────── ✦ ───────╮
+                                         │      ▀▀█       │
+                                         │      █▀ █      │
+                                         ╰────────────────╯
+
+╭──────────────────────────────────────────────────────────────────────────────────────────────────╮
+┃_pi:fc _pi:/fc Ask anything…  "Fix a TODO in the codebase"                                                     │
+┃                                                                                                  │
+╰ Chat · Fixture · high                                                                            ╯
+[5 spacer rows]
+/tmp/opencode-ui-check/project                                         Cost —  ·  Context 18% / 200k
+
+120x40
+
+
+
+
+
+
+
+
+
+
+
+
+                                                   ╭────── ✦ ───────╮
+                                                   │      ▀▀█       │
+                                                   │      █▀ █      │
+                                                   ╰────────────────╯
+
+╭──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+┃_pi:fc _pi:/fc Ask anything…  "Fix a TODO in the codebase"                                                                         │
+┃                                                                                                                      │
+╰ Chat · Fixture · high                                                                                                ╯
+[9 spacer rows]
+/tmp/opencode-ui-check/project                                                             Cost —  ·  Context 18% / 200k
+
+160x50
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                       ╭────── ✦ ───────╮
+                                                                       │      ▀▀█       │
+                                                                       │      █▀ █      │
+                                                                       ╰────────────────╯
+
+╭──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+┃_pi:fc _pi:/fc Ask anything…  "Fix a TODO in the codebase"                                                                                                                 │
+┃                                                                                                                                                              │
+╰ Chat · Fixture · high                                                                                                                                        ╯
+[12 spacer rows]
+/tmp/opencode-ui-check/project                                                                                                     Cost —  ·  Context 18% / 200k

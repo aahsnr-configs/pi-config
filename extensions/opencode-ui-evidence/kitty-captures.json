@@ -1,0 +1,32 @@
+[
+  {
+    "scenario": "home",
+    "path": "kitty-home.png",
+    "logicalWidth": 1900,
+    "logicalHeight": 1026
+  },
+  {
+    "scenario": "popup",
+    "path": "kitty-popup.png",
+    "logicalWidth": 1900,
+    "logicalHeight": 1026
+  },
+  {
+    "scenario": "file-popup",
+    "path": "kitty-file-popup.png",
+    "logicalWidth": 1900,
+    "logicalHeight": 1026
+  },
+  {
+    "scenario": "chat",
+    "path": "kitty-chat.png",
+    "logicalWidth": 1900,
+    "logicalHeight": 1026
+  },
+  {
+    "scenario": "dialog",
+    "path": "kitty-dialog.png",
+    "logicalWidth": 1900,
+    "logicalHeight": 1026
+  }
+]

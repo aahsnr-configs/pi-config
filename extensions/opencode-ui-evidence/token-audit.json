@@ -1,0 +1,14 @@
+{
+  "fixture": "actual Pi 1.5.2 SDK and native faux provider; read + Markdown answer",
+  "callsOff": 2,
+  "callsOn": 2,
+  "deltaInputTokens": 0,
+  "deltaOutputTokens": 0,
+  "requestSignatureOff": "95802313fbb627fa49732acb59d4105fdd70468fc956b9b5e1770b3fc1efd285",
+  "requestSignatureOn": "95802313fbb627fa49732acb59d4105fdd70468fc956b9b5e1770b3fc1efd285",
+  "manifestSignatureOff": "e20325d500f3a6c18c05226c6dbf1b42b27bf804a730f038dbef6d5d9d9ea822",
+  "manifestSignatureOn": "e20325d500f3a6c18c05226c6dbf1b42b27bf804a730f038dbef6d5d9d9ea822",
+  "messagesSignatureOff": "8478e6e5be4a940525adc4bfab33a77b1fd124b2aeb64e9e2332a0f274b7f9db",
+  "messagesSignatureOn": "8478e6e5be4a940525adc4bfab33a77b1fd124b2aeb64e9e2332a0f274b7f9db",
+  "limitation": "Controlled fixture only; full installed-stack and live billed-provider audit not performed."
+}

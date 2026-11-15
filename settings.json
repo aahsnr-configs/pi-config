@@ -8,7 +8,6 @@
   "packages": [
     "npm:pi-sandbox",
     "npm:@narumitw/pi-cache-hit-monitor",
-    "npm:pi-openui",
     "npm:@gotgenes/pi-permission-system",
     "npm:pi-lens",
     {
@@ -26,7 +25,12 @@
       ],
       "prompts": [],
       "themes": []
-    }
+    },
+    "npm:@d3ara1n/pi-command-palette",
+    "npm:pi-extmgr",
+    "npm:@sreetej510/pi-prompt-manager",
+    "npm:pi-optimize-prompt",
+    "npm:pi-open-tui"
   ],
   "extensionChangelogVersions": {
     "{\"source\":\"npm:pi-open-tui\",\"scope\":\"user\"}": "0.4.6",
@@ -36,7 +40,8 @@
     "{\"source\":\"npm:pi-fast-tui\",\"scope\":\"user\"}": "0.9.0",
     "{\"source\":\"npm:pi-permission-system\",\"scope\":\"user\"}": "0.8.0",
     "{\"source\":\"npm:@gotgenes/pi-permission-system\",\"scope\":\"user\"}": "42.0.0",
-    "{\"source\":\"npm:pi-lens\",\"scope\":\"user\"}": "4.5.0"
+    "{\"source\":\"npm:pi-lens\",\"scope\":\"user\"}": "4.5.0",
+    "{\"source\":\"npm:pi-extmgr\",\"scope\":\"user\"}": "0.4.2"
   },
   "defaultProjectTrust": "ask",
   "theme": "dark"

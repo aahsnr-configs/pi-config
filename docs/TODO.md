@@ -30,5 +30,4 @@
 - [ ] Make pi automatically use gh for recommended tasks
 - [ ] `Important`: If left untouched is it possible for the thinking level to be automatically selected if possible?
 - [ ] `Important`: Skills should be in ~/.agents/skills
-- [ ] `Important`: Is instead web gui possible?
 - [ ] `Important`: Need to add global memory and project specific memory. Need to add a session manager.

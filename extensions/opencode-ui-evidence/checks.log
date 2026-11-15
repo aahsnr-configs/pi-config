@@ -1,0 +1,155 @@
+TypeScript strict check: PASS
+TAP version 13
+# Subtest: native editor text, cursor and submission stay equal across Unicode, paste, wrapping and resize
+ok 1 - native editor text, cursor and submission stay equal across Unicode, paste, wrapping and resize
+  ---
+  duration_ms: 66.587688
+  type: 'test'
+  ...
+# Subtest: ghost placeholder preserves real empty text and the native IME cursor cell
+ok 2 - ghost placeholder preserves real empty text and the native IME cursor cell
+  ---
+  duration_ms: 0.524336
+  type: 'test'
+  ...
+# Subtest: dashboard uses the original Pi brand pixels and a decorated frame
+ok 3 - dashboard uses the original Pi brand pixels and a decorated frame
+  ---
+  duration_ms: 1.722481
+  type: 'test'
+  ...
+# Subtest: startup composer targets two-thirds height and absorbs native popup growth
+ok 4 - startup composer targets two-thirds height and absorbs native popup growth
+  ---
+  duration_ms: 0.135052
+  type: 'test'
+  ...
+# Subtest: native slash completions move ABOVE with native keyboard insertion, paging, mapped mouse and viewport capture
+ok 5 - native slash completions move ABOVE with native keyboard insertion, paging, mapped mouse and viewport capture
+  ---
+  duration_ms: 27.553249
+  type: 'test'
+  ...
+# Subtest: native file completion uses the host provider, including emoji names and no matches
+ok 6 - native file completion uses the host provider, including emoji names and no matches
+  ---
+  duration_ms: 79.333628
+  type: 'test'
+  ...
+# Subtest: above-menu row mapping survives resize, multiline input, wheel and dismissal without IME marker drift
+ok 7 - above-menu row mapping survives resize, multiline input, wheel and dismissal without IME marker drift
+  ---
+  duration_ms: 32.665905
+  type: 'test'
+  ...
+# Subtest: maximum configured completion cannot hide the native composer at 60x18
+ok 8 - maximum configured completion cannot hide the native composer at 60x18
+  ---
+  duration_ms: 30.863275
+  type: 'test'
+  ...
+# Subtest: real fullscreen layout keeps long-prompt cursor, metadata and footer with monitor/status on resize to 60x18
+ok 9 - real fullscreen layout keeps long-prompt cursor, metadata and footer with monitor/status on resize to 60x18
+  ---
+  duration_ms: 33.934433
+  type: 'test'
+  ...
+# Subtest: interactive override of built-in tool keeps its exact mouse target and coordinates inside complete card
+ok 10 - interactive override of built-in tool keeps its exact mouse target and coordinates inside complete card
+  ---
+  duration_ms: 1.073059
+  type: 'test'
+  ...
+# Subtest: mouse positions on native text remain unchanged
+ok 11 - mouse positions on native text remain unchanged
+  ---
+  duration_ms: 0.301245
+  type: 'test'
+  ...
+# Subtest: model/effort and the real downward scroll count coexist on multiline input
+ok 12 - model/effort and the real downward scroll count coexist on multiline input
+  ---
+  duration_ms: 2.505047
+  type: 'test'
+  ...
+# Subtest: phase transitions, permission coexistence, tree navigation and 30 reload cycles clean owned UI
+ok 13 - phase transitions, permission coexistence, tree navigation and 30 reload cycles clean owned UI
+  ---
+  duration_ms: 5.32386
+  type: 'test'
+  ...
+# Subtest: nonempty resume, regular-mode guard and existing custom editor are respected
+ok 14 - nonempty resume, regular-mode guard and existing custom editor are respected
+  ---
+  duration_ms: 0.206467
+  type: 'test'
+  ...
+# Subtest: composer shell mode agrees with native whitespace handling
+ok 15 - composer shell mode agrees with native whitespace handling
+  ---
+  duration_ms: 0.232213
+  type: 'test'
+  ...
+# Subtest: other footer/header owners are not reclaimed or removed at shutdown
+ok 16 - other footer/header owners are not reclaimed or removed at shutdown
+  ---
+  duration_ms: 0.113402
+  type: 'test'
+  ...
+# Subtest: workflow interleaving, nested IDs, failures, interruptions and bounded retention
+ok 17 - workflow interleaving, nested IDs, failures, interruptions and bounded retention
+  ---
+  duration_ms: 1.021655
+  type: 'test'
+  ...
+# Subtest: renderer chaining preserves custom, interactive, security, edit and unknown renderers by identity
+ok 18 - renderer chaining preserves custom, interactive, security, edit and unknown renderers by identity
+  ---
+  duration_ms: 0.096332
+  type: 'test'
+  ...
+# Subtest: actual core call renderers preserve all arguments, expansion, result callbacks and component caches
+ok 19 - actual core call renderers preserve all arguments, expansion, result callbacks and component caches
+  ---
+  duration_ms: 9.19651
+  type: 'test'
+  ...
+# Subtest: cost includes documented usage entries once; footer formats unknown/subscription and Unicode widths
+ok 20 - cost includes documented usage entries once; footer formats unknown/subscription and Unicode widths
+  ---
+  duration_ms: 0.435104
+  type: 'test'
+  ...
+# Subtest: themed surfaces update locally on theme change; dimensions and snapshots remain bounded
+ok 21 - themed surfaces update locally on theme change; dimensions and snapshots remain bounded
+  ---
+  duration_ms: 2.803312
+  type: 'test'
+  ...
+# Subtest: no forbidden runtime APIs, dependencies, dynamic code or private access
+ok 22 - no forbidden runtime APIs, dependencies, dynamic code or private access
+  ---
+  duration_ms: 0.300291
+  type: 'test'
+  ...
+# Subtest: Pi actual TypeScript extension loader loads one file without model-facing registrations
+ok 23 - Pi actual TypeScript extension loader loads one file without model-facing registrations
+  ---
+  duration_ms: 152.705031
+  type: 'test'
+  ...
+# Subtest: actual Pi SDK paired provider payload/manifest/message/token audit, UI enabled vs disabled
+ok 24 - actual Pi SDK paired provider payload/manifest/message/token audit, UI enabled vs disabled
+  ---
+  duration_ms: 61.301319
+  type: 'test'
+  ...
+1..24
+# tests 24
+# suites 0
+# pass 24
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 853.034475
