@@ -1,0 +1,5 @@
+- There is a chatgpt free offer going for getting chatgpt plus free for a month.
+- This ends in Dec 15.
+- I will get another one now.
+- I will get 2 more in Nov 30.
+- I will need 3 visas.

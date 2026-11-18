@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "enabled": false,
+  "maxActiveServers": 2,
+  "readyTimeoutMs": 5000,
+  "servers": {
+    "context7": { "action": "deny", "aliases": ["Context7 MCP"] },
+    "keenable": { "action": "deny", "aliases": ["Keenable MCP"] },
+    "playwright": { "action": "deny", "aliases": ["Playwright MCP"] },
+    "zotero": { "action": "deny", "aliases": ["Zotero MCP"] }
+  }
+}

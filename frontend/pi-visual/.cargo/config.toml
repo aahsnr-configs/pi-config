@@ -1,0 +1,5 @@
+[alias]
+verify-fmt = "fmt --all -- --check"
+verify-check = "check --workspace --all-targets"
+verify-test = "test --workspace --all-targets"
+# No global rustflags, custom linker, credential configuration or registry override.

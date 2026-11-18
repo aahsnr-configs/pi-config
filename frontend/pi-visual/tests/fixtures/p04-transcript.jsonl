@@ -1,0 +1,18 @@
+{"type":"agent_start"}
+{"type":"message_start","message":{"role":"user","content":"DEMO DATA: inspect a project and explain the results."}}
+{"type":"message_end","message":{"role":"user","content":"DEMO DATA: inspect a project and explain the results."}}
+{"type":"message_start","message":{"role":"assistant","content":[]}}
+{"type":"message_update","assistantMessageEvent":{"type":"text_delta","contentIndex":0,"delta":"# Demo analysis\n\nThis is **synthetic fixture data**, rendered *locally*.\n\n- [x] Markdown\n- [ ] Real project changes\n\n> No tool is executed by replay.\n\n| Name | Value |\n| --- | --- |\n| Mode | Offline |\n\n```rust\nfn main() {\n    println!(\"中 é 🙂\");\n}\n```\n\n[Reference](https://example.invalid)\n\n---\n"}}
+{"type":"message_end","message":{"role":"assistant","content":[{"type":"text","text":"# Demo analysis\n\nThis is **synthetic fixture data**, rendered *locally*.\n\n- [x] Markdown\n- [ ] Real project changes\n\n> No tool is executed by replay.\n\n| Name | Value |\n| --- | --- |\n| Mode | Offline |\n\n```rust\nfn main() {\n    println!(\"中 é 🙂\");\n}\n```\n\n[Reference](https://example.invalid)\n\n---\n"}]}}
+{"type":"tool_execution_start","toolCallId":"demo-read","toolName":"read","args":{"path":"demo/example.rs"}}
+{"type":"tool_execution_start","toolCallId":"demo-search","toolName":"grep","args":{"path":"demo/"}}
+{"type":"tool_execution_end","toolCallId":"demo-read","toolName":"read","isError":false,"result":{"content":[{"type":"text","text":"1: fn example() {}"}]},"durationMs":2}
+{"type":"tool_execution_end","toolCallId":"demo-search","toolName":"grep","isError":false,"result":{"content":[{"type":"text","text":"demo/example.rs:1: fn example() {}"}]}}
+{"type":"tool_execution_start","toolCallId":"demo-edit","toolName":"edit","args":{"path":"demo/example.rs"}}
+{"type":"tool_execution_end","toolCallId":"demo-edit","toolName":"edit","isError":false,"result":{"content":[{"type":"text","text":"@@ -1 +1 @@\n-fn example() {}\n+fn example() { /* demo */ }"}]}}
+{"type":"tool_execution_start","toolCallId":"demo-test","toolName":"bash","args":{"command":"example-test-command (demo only)"}}
+{"type":"tool_execution_end","toolCallId":"demo-test","toolName":"bash","isError":true,"result":{"content":[{"type":"text","text":"synthetic failure; no test counts claimed"}]}}
+{"type":"auto_retry_start","attempt":1,"maxAttempts":2,"delayMs":100,"errorMessage":"synthetic retry"}
+{"type":"auto_retry_end","success":false,"attempt":1,"finalError":"synthetic cancellation"}
+{"type":"agent_end","messages":[],"willRetry":false}
+{"type":"agent_settled","aborted":true}

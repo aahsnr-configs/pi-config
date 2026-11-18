@@ -1,0 +1,59 @@
+{
+  "defaultMode": "workflow-boundary",
+  "cycleOrder": [
+    "workflow-boundary"
+  ],
+  "shells": {
+    "enabled": false,
+    "notify": "none"
+  },
+  "modes": {
+    "workflow-boundary": {
+      "label": "Workflow boundary",
+      "color": "muted",
+      "injectSandboxInfo": false,
+      "bypassProtectedPaths": false,
+      "hideTools": [
+        "bash",
+        "read",
+        "write",
+        "edit",
+        "grep",
+        "find",
+        "ls",
+        "show_plan",
+        "codemode",
+        "subagent"
+      ],
+      "sandbox": {
+        "enabled": true,
+        "writable": false,
+        "allowWrite": [],
+        "askOnBlockedHost": false
+      },
+      "permission": {
+        "external_directory": "deny",
+        "read": "deny",
+        "write": "deny",
+        "edit": "deny",
+        "grep": "deny",
+        "find": "deny",
+        "ls": "deny",
+        "bash": "deny",
+        "web_search": "deny",
+        "skill": "deny",
+        "tool": {
+          "*": "deny",
+          "workflow_list": "allow",
+          "workflow_search": "allow",
+          "workflow_read": "allow",
+          "workflow_research": "allow",
+          "workflow_write": "allow",
+          "workflow_diff": "allow",
+          "workflow_check": "allow",
+          "structured_output": "allow"
+        }
+      }
+    }
+  }
+}

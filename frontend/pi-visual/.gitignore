@@ -1,0 +1,12 @@
+/target/
+/.idea/
+/.vscode/
+*.log
+*.swp
+.DS_Store
+# An APPLICATION workspace: DO commit Cargo.lock after cargo generates it.
+# Never commit credentials or temporary Pi integration-test home directories.
+/.test-pi-home/
+/.tmp/
+/.env
+.env.*

@@ -1,0 +1,7 @@
+# Select the currently installed stable toolchain. Do not put an old
+# version here. Install rustfmt/clippy separately in the bootstrap instructions
+# to avoid rustup component download races on a misconfigured host.
+# rust-src is NOT necessary for this project.
+[toolchain]
+channel = "stable"
+profile = "minimal"

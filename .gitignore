@@ -1,9 +1,43 @@
-.extmgr-cache/
-bin/
-install/
-npm/
-sessions/
-tmp/
-auth.json
-mcp-auth.json
-docs/.obsidian/
+# Installed packages and Pi runtime data
+/bin/
+/install/
+/npm/
+/sessions/
+/tmp/
+/.extmgr-cache/
+/models-store.json
+/permission-mode/state.json
+/pi-subagents/last-seen-version.json
+/missions/index/
+/missions/projects/
+/docs/.obsidian/
+
+# Credentials and private keys
+/auth.json
+/mcp-auth.json
+**/.env
+**/.env.*
+!**/.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.keystore
+
+# User-local configuration
+/.agents/
+/.aws/
+/.codex/
+
+# Logs, caches, virtual environments, and OS metadata
+/mcp.log*
+/.cache/
+/.pytest_cache/
+/.venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+Thumbs.db
+
+# Local policy validation marker
+/.codex-deny-test

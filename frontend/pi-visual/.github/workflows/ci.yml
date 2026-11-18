@@ -1,0 +1,29 @@
+name: rust-checks
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          components: rustfmt, clippy
+      - name: Show active Rust toolchain
+        run: rustc --version && cargo --version
+      - name: Ensure application lockfile is committed
+        run: |
+          test -s Cargo.lock || { echo 'Cargo.lock missing. Run cargo generate-lockfile and commit it.'; exit 1; }
+      - name: Formatting
+        run: cargo fmt --all -- --check
+      - name: Compile all targets
+        run: cargo check --workspace --all-targets --locked
+      - name: Lint
+        run: cargo clippy --workspace --all-targets --locked -- -D warnings
+      - name: Tests
+        run: cargo test --workspace --all-targets --locked
+      - name: Build standalone frontend
+        run: cargo build -p pi-visual --locked

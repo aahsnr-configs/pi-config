@@ -1,0 +1,73 @@
+{
+  "date": "2026-11-16",
+  "slice": "P04.2 safe ANSI status display and live startup regression",
+  "productionReady": false,
+  "gates": {
+    "G0": {
+      "status": "tested-ci",
+      "result": "PASS",
+      "evidence": "tests/g0.rs opt-in real Pi1.5.2 + local fake provider; deterministic client/reducer failure suite; rerun after P04"
+    },
+    "G1": {
+      "status": "tested-ci",
+      "result": "PASS",
+      "scope": "permission interception only; no OS confinement; ADR0002",
+      "evidence": "34 real permission-only scenarios incl external gate, session reset, actual MCP and demonstrated opaque-execution limits; prior modal regressions pass; rerun after P04",
+      "originalResult": "PARTIAL (archived original sandbox-inclusive contract)"
+    },
+    "G2": {
+      "status": "missing",
+      "result": "NOT TESTED"
+    },
+    "G3": {
+      "status": "missing",
+      "result": "NOT TESTED"
+    },
+    "G4": {
+      "status": "missing",
+      "result": "NOT TESTED"
+    },
+    "G5": {
+      "status": "missing",
+      "result": "NOT TESTED"
+    },
+    "G6": {
+      "status": "missing",
+      "result": "NOT TESTED"
+    },
+    "G7": {
+      "status": "missing",
+      "result": "NOT TESTED"
+    },
+    "G8": {
+      "status": "missing",
+      "result": "NOT TESTED"
+    }
+  },
+  "automated": {
+    "command": "cargo test --workspace --all-targets --locked",
+    "passed": 91,
+    "failed": 0,
+    "ignored": 6
+  },
+  "kittyTested": false,
+  "browserEnabled": false,
+  "widgetFamiliesTested": 0,
+  "providerParityMeasured": false,
+  "phases": {
+    "P04": {
+      "status": "tested-ci",
+      "result": "PARTIAL",
+      "evidence": "91 tests; focused Astra review; real G0/G1/session and PTY regressions including ANSI status replacement, chrome/focus/scroll and inert historical /quit",
+      "missingEvidence": [
+        "post-fix genuine Kitty status/chrome/focus/scroll/resize/paste/modal/lifecycle checklist"
+      ],
+      "normalConfiguredStartup": true,
+      "next": "Record human Kitty acceptance; no P05"
+    }
+  },
+  "kittyLaunchReportedByUser": true,
+  "kittyChecklist": "docs/kitty-acceptance.md",
+  "kittyLiveStartupReportedByUser": true,
+  "kittyPostFixAnsiVerified": false
+}

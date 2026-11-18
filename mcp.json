@@ -2,7 +2,7 @@
   "mcpServers": {
     "keenable": {
       "url": "https://api.keenable.ai/mcp-public",
-      "enabled": true,
+      "enabled": false,
       "exposure": "codemode",
       "description": "Search and fetch current web sources. Prefer a few concise results and fetch only relevant pages.",
       "toolExposure": {
@@ -12,7 +12,7 @@
       }
     },
     "context7": {
-      "url": "https://mcp.context7.com/mcp/oauth",
+      "url": "https://mcp.context7.com/mcp",
       "enabled": false,
       "exposure": "codemode",
       "description": "Fetch current library and framework documentation when needed."

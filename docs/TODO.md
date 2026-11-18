@@ -30,4 +30,7 @@
 - [ ] Make pi automatically use gh for recommended tasks
 - [ ] `Important`: If left untouched is it possible for the thinking level to be automatically selected if possible?
 - [ ] `Important`: Skills should be in ~/.agents/skills
+- [ ] `Important`: preventing duplicated context ingestion between the main agent and subagents.
+- [ ] `Important`: Isolated subagents with their own conversations, terminals, and Python RPC scripts for zero-context-cost pipelines.
 - [ ] `Important`: Need to add global memory and project specific memory. Need to add a session manager.
+- [ ] `Important`: Plan mode must ask me questions if needed as well as the planner

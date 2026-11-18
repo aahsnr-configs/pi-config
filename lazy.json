@@ -1,0 +1,218 @@
+{
+  "version": 1,
+  "defaults": {
+    "lazy": true
+  },
+  "auto": false,
+  "autoLoadLimit": 1,
+  "afterStartBatchSize": 1,
+  "afterStartDelayMs": 0,
+  "afterStartInitialDelayMs": 750,
+  "afterStartPauseDuringTurn": true,
+  "afterStartAdaptiveYield": true,
+  "afterStartPrefetch": true,
+  "managerCompat": true,
+  "footerCompat": true,
+  "bootQuiet": true,
+  "specs": [
+    {
+      "name": "@narumitw/pi-cache-hit-monitor",
+      "source": "npm:@narumitw/pi-cache-hit-monitor",
+      "lazy": false,
+      "keywords": [
+        "@narumitw/pi-cache-hit-monitor"
+      ],
+      "cmd": [],
+      "description": "auto-discovered from settings.json — stays eager; set lazy/after-start by hand to defer it"
+    },
+    {
+      "name": "pi-lens",
+      "source": "npm:pi-lens",
+      "lazy": false,
+      "keywords": [
+        "pi-lens"
+      ],
+      "cmd": [],
+      "description": "auto-discovered from settings.json — stays eager; set lazy/after-start by hand to defer it"
+    },
+    {
+      "name": "pi-feature-dev",
+      "source": "npm:pi-feature-dev",
+      "lazy": false,
+      "keywords": [
+        "pi-feature-dev"
+      ],
+      "cmd": [],
+      "description": "auto-discovered from settings.json — stays eager; set lazy/after-start by hand to defer it"
+    },
+    {
+      "name": "@d3ara1n/pi-command-palette",
+      "source": "npm:@d3ara1n/pi-command-palette",
+      "lazy": false,
+      "keywords": [
+        "@d3ara1n/pi-command-palette"
+      ],
+      "cmd": [
+        "palette"
+      ],
+      "description": "auto-discovered from settings.json — stays eager; set lazy/after-start by hand to defer it"
+    },
+    {
+      "name": "pi-extmgr",
+      "source": "npm:pi-extmgr",
+      "lazy": false,
+      "keywords": [
+        "pi-extmgr"
+      ],
+      "cmd": [
+        "extensions"
+      ],
+      "description": "auto-discovered from settings.json — stays eager; set lazy/after-start by hand to defer it"
+    },
+    {
+      "name": "@sreetej510/pi-prompt-manager",
+      "source": "npm:@sreetej510/pi-prompt-manager",
+      "lazy": false,
+      "keywords": [
+        "@sreetej510/pi-prompt-manager"
+      ],
+      "cmd": [
+        "prompt"
+      ],
+      "description": "auto-discovered from settings.json — stays eager; set lazy/after-start by hand to defer it"
+    },
+    {
+      "name": "pi-permission-modes",
+      "source": "npm:pi-permission-modes",
+      "lazy": false,
+      "keywords": [
+        "pi-permission-modes"
+      ],
+      "cmd": [
+        "net",
+        "perm",
+        "plan",
+        "sandbox",
+        "shells"
+      ],
+      "description": "auto-discovered from settings.json — stays eager; set lazy/after-start by hand to defer it"
+    },
+    {
+      "name": "@narumitw/pi-goal",
+      "source": "npm:@narumitw/pi-goal",
+      "lazy": false,
+      "keywords": [
+        "@narumitw/pi-goal"
+      ],
+      "cmd": [
+        "goal"
+      ],
+      "description": "auto-discovered from settings.json — stays eager; set lazy/after-start by hand to defer it"
+    },
+    {
+      "name": "@narumitw/pi-btw",
+      "source": "npm:@narumitw/pi-btw",
+      "lazy": false,
+      "keywords": [
+        "@narumitw/pi-btw"
+      ],
+      "cmd": [
+        "btw"
+      ],
+      "description": "auto-discovered from settings.json — stays eager; set lazy/after-start by hand to defer it"
+    },
+    {
+      "name": "@narumitw/pi-accounts",
+      "source": "npm:@narumitw/pi-accounts",
+      "lazy": false,
+      "keywords": [
+        "@narumitw/pi-accounts"
+      ],
+      "cmd": [
+        "accounts"
+      ],
+      "description": "auto-discovered from settings.json — stays eager; set lazy/after-start by hand to defer it"
+    },
+    {
+      "name": "pi-subagents",
+      "source": "npm:pi-subagents",
+      "lazy": false,
+      "keywords": [
+        "pi-subagents"
+      ],
+      "cmd": [],
+      "description": "auto-discovered from settings.json — stays eager; set lazy/after-start by hand to defer it"
+    },
+    {
+      "name": "pi-fast-tui",
+      "source": "npm:pi-fast-tui",
+      "lazy": false,
+      "keywords": [
+        "pi-fast-tui"
+      ],
+      "cmd": [],
+      "description": "auto-discovered from settings.json — stays eager; set lazy/after-start by hand to defer it"
+    },
+    {
+      "name": "billion-context",
+      "source": "npm:billion-context",
+      "lazy": false,
+      "keywords": [
+        "billion-context"
+      ],
+      "cmd": [],
+      "description": "auto-discovered from settings.json — stays eager; set lazy/after-start by hand to defer it"
+    },
+    {
+      "name": "@dietrichgebert/ponytail",
+      "source": "npm:@dietrichgebert/ponytail",
+      "lazy": false,
+      "keywords": [
+        "@dietrichgebert/ponytail"
+      ],
+      "cmd": [
+        "ponytail",
+        "ponytail-audit",
+        "ponytail-debt",
+        "ponytail-gain",
+        "ponytail-help",
+        "ponytail-review"
+      ],
+      "description": "auto-discovered from settings.json — stays eager; set lazy/after-start by hand to defer it"
+    },
+    {
+      "name": "pi-prompt-optimize",
+      "source": "npm:pi-prompt-optimize",
+      "lazy": false,
+      "keywords": [
+        "pi-prompt-optimize"
+      ],
+      "cmd": [
+        "prompt-optimize"
+      ],
+      "description": "auto-discovered from settings.json — stays eager; set lazy/after-start by hand to defer it"
+    },
+    {
+      "name": "pi-promptsmith",
+      "source": "npm:pi-promptsmith",
+      "lazy": false,
+      "keywords": [
+        "pi-promptsmith"
+      ],
+      "cmd": [],
+      "description": "auto-discovered from settings.json — stays eager; set lazy/after-start by hand to defer it"
+    },
+    {
+      "name": "@zhuyanqi/pi-lazy",
+      "source": "npm:@zhuyanqi/pi-lazy",
+      "lazy": false,
+      "keywords": [
+        "@zhuyanqi/pi-lazy"
+      ],
+      "cmd": [
+        "lazy"
+      ],
+      "description": "auto-discovered from settings.json — stays eager; set lazy/after-start by hand to defer it"
+    }
+  ]
+}
