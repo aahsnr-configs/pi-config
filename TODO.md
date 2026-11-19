@@ -22,6 +22,7 @@
 - [ ] Can lsp and formatter installed system-wide run inside the bwrap sandbox
 - [ ] Need to add pi-btw
 - [ ] Add pi --continue
+- [ ] Add markdown rendering in the prompt location
 - [ ] Make pi automatically use gh for recommended tasks
 - [ ] `Important`: If left untouched is it possible for the thinking level to be automatically selected if possible?
 - [ ] `Important`: Skills should be in ~/.agents/skills

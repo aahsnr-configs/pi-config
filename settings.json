@@ -8,7 +8,7 @@
   "defaultProjectTrust": "ask",
   "theme": "dark",
   "subagents": {
-    "defaultThinking": "high",
+    "defaultThinking": "medium",
     "maxThinking": "medium",
     "defaultInheritGlobalContext": false,
     "modelScope": {
