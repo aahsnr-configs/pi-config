@@ -4,16 +4,16 @@ The managed Pi workflow begins ordinary tasks in read-only Plan mode. Use `/buil
 
 ## Start a managed session
 
-Run this command from the project directory in a terminal with `OPENAI_API_KEY` available through your credential manager. The workflow uses Pi 1.5.2, pi-subagents 0.89.0, and pi-permission-modes 2.7.2.
+Run this command directly against the bundled Python launcher (no `bin/pi` wrapper is included) from the project directory in a terminal with `OPENAI_API_KEY` available through your credential manager. The workflow uses Pi 1.5.2, pi-subagents 0.89.0, and pi-permission-modes 2.7.2.
 
 ```bash
 pi_session_log=$(mktemp)
-/var/home/ahsan/.pi/agent/bin/pi --workflow "$(pwd -P)" \
+/usr/bin/python3 -I "${PI_CODING_AGENT_DIR:-$HOME/.pi/agent}/workflow/launch.py" "$(pwd -P)" \
   openai/gpt-6.1-terra openai/gpt-6-luna,openai/gpt-6.1-sol \
   --advisor openai/gpt-6.1-sol | tee "$pi_session_log"
 ```
 
-Terra handles the main work, Luna gathers evidence, and Sol is available on request. For other models, use `provider/model` IDs from the installed Pi catalog and separate ingestion pool entries with commas. The launcher uses supported API key environment variables. It requires a canonical, user-owned project directory and a private, writable `/run/user/$(id -u)` directory. Choose a project whose permitted contents can be sent to your model provider. When the `ready` record appears, enter workflow commands one line at a time and wait for each result. [Launcher](workflow/launch.py)
+Terra handles the main work, Luna gathers evidence, and Sol is available on request. For other models, use `provider/model` IDs from the installed Pi catalog and separate ingestion pool entries with commas. The launcher uses supported API key environment variables. It requires a canonical, user-owned project directory and a private, writable `/run/user/$(id -u)` directory. Choose a project whose permitted contents can be sent to your model provider. When the `ready` record appears, enter workflow commands one line at a time and wait for each result. [Launcher](launch.py)
 
 ## Extensions and permissions
 
@@ -23,7 +23,7 @@ Terra handles the main work, Luna gathers evidence, and Sol is available on requ
 - A per-user lock allows only one managed session at a time. A competing launch reports that the workflow is busy. Cancellation and timeout retain the lock until active work has settled.
 - Workspace tools use `fd` to discover files, `rg` to search, and `bat` for bounded reads. Accept only validated workspace-relative paths and fixed arguments. Exclude traversal, symlinks, hard links, special files, and sensitive paths such as `.env*`, credentials, keys, auth files, session data, and Pi policy files.
 
-[Permission modes](npm/node_modules/pi-permission-modes/docs/modes.md) · [Subagent configuration](https://github.com/nicobailon/pi-subagents/blob/main/docs/configuration.md) · [Structured delegation and capability ceilings](https://github.com/nicobailon/pi-subagents/blob/main/docs/extension-api.md)
+[Permission modes](../npm/node_modules/pi-permission-modes/docs/modes.md) · [Subagent configuration](https://github.com/nicobailon/pi-subagents/blob/main/docs/configuration.md) · [Structured delegation and capability ceilings](https://github.com/nicobailon/pi-subagents/blob/main/docs/extension-api.md)
 
 ## Everyday commands
 

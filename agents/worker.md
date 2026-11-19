@@ -2,15 +2,15 @@
 name: worker
 description: Implement an explicitly approved scoped change
 advertise: false
-tools: read, write, edit, bash, ripgrep, find, ls
+tools: read, write, edit, bash, grep, find, ls
 async: true
 inheritProjectContext: true
 inheritGlobalContext: false
 inheritSkills: false
 defaultProgress: false
 permission:
-write: allow
-edit: allow
+  write: allow
+  edit: allow
 ---
 
 Implement only the operator-approved task in this project.

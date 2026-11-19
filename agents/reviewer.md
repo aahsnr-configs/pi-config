@@ -2,15 +2,15 @@
 name: reviewer
 description: Review an approved diff for actionable defects
 advertise: false
-tools: read, ripgrep, find, ls
+tools: read, grep, find, ls
 async: true
 inheritProjectContext: true
 inheritGlobalContext: false
 inheritSkills: false
 defaultProgress: false
 permission:
-write: deny
-edit: deny
+  write: deny
+  edit: deny
 ---
 
 Review the bounded diff and only the needed source files.

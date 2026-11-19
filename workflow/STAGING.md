@@ -1,11 +1,12 @@
 # Managed workflow staging
 
-For current launch and research instructions, use [`../pi-workflow-config.md`](../pi-workflow-config.md).
+For current launch and research instructions, use [`pi-workflow-config.md`](pi-workflow-config.md).
 The staging results below describe the earlier configuration.
 
 The separate SDK launcher is `launch.py`; it is not installed into `bin/pi` or
-live settings. See [`../MANAGED_PI_STAGING.md`](../MANAGED_PI_STAGING.md) for
-verification results and the operator-only smoke and patch review steps.
+live settings. See [`PI_WORKFLOW_PRODUCTION_TESTS.md`](PI_WORKFLOW_PRODUCTION_TESTS.md) for the
+operator-only smoke and patch review steps. The earlier `MANAGED_PI_STAGING.md`
+report is not present in this source archive.
 
 ## Entry points and boundaries
 

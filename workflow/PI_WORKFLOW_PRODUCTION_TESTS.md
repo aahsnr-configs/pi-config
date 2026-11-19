@@ -1,6 +1,6 @@
 # Pi workflow production readiness tests
 
-Run this checklist as the Linux user who will use `pi --workflow`, from the same terminal environment and network. The offline suite uses fixtures and simulated providers. The live sections make model and MCP calls and may consume provider usage. Use the disposable workspace below throughout. Keep the shell open so the commands can reuse its paths and functions.
+Run this checklist as the Linux user who will use the managed workflow launcher, from the same terminal environment and network. The offline suite uses fixtures and simulated providers. The live sections make model and MCP calls and may consume provider usage. Use the disposable workspace below throughout. Keep the shell open so the commands can reuse its paths and functions.
 
 ## 1. Verify the installed packages and run the offline suite
 
@@ -8,15 +8,15 @@ Open a Bash terminal. Run each block separately and stop to record any failure.
 
 ```bash
 set -o pipefail
-agent_dir=/var/home/ahsan/.pi/agent
-launcher="$agent_dir/bin/pi"
+agent_dir="${PI_CODING_AGENT_DIR:-$HOME/.pi/agent}"
+launcher="$agent_dir/workflow/launch.py"
 cd "$agent_dir"
 
 /usr/bin/jq -e '.version == "1.5.2"' install/releases/1.5.2/node_modules/@earendil-works/pi-coding-agent/package.json
 /usr/bin/jq -e '.version == "0.89.0"' npm/node_modules/pi-subagents/package.json
 /usr/bin/jq -e '.version == "2.7.2"' npm/node_modules/pi-permission-modes/package.json
-/usr/bin/bash -n "$launcher"
-"$launcher" --workflow --help
+/usr/bin/python3 -I "$launcher" --help >/dev/null  # Python syntax/import smoke, no managed session
+/usr/bin/python3 -I "$launcher" --help
 ```
 
 Each version comparison should print `true`. Help should list the three positional arguments and the advisor and public research options.
@@ -71,7 +71,7 @@ test('only the approved change appears in the isolated candidate', () => {
 JS
 
 launch() {
-  "$launcher" --workflow "$fixture" \
+  /usr/bin/python3 -I "$launcher" "$fixture" \
     openai/gpt-6.1-terra openai/gpt-6-luna,openai/gpt-6.1-sol \
     --advisor openai/gpt-6.1-sol "$@"
 }
@@ -99,7 +99,7 @@ Run this while Terminal A remains open at the Pi prompt.
 
 ```bash
 other_fixture=$(mktemp -d /tmp/pi-workflow-contender.XXXXXXXX)
-/var/home/ahsan/.pi/agent/bin/pi --workflow "$other_fixture" \
+/usr/bin/python3 -I "$launcher" "$other_fixture" \
   openai/gpt-6.1-terra openai/gpt-6-luna </dev/null
 printf 'launcher exit: %s\n' "$?"
 ```

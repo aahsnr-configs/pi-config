@@ -1,0 +1,15 @@
+@narumitw/pi-cache-hit-monitor
+pi-lens
+pi-feature-dev
+@d3ara1n/pi-command-palette
+pi-extmgr
+@sreetej510/pi-prompt-manager
+pi-permission-modes
+@narumitw/pi-btw
+@narumitw/pi-accounts
+pi-subagents
+pi-fast-tui
+billion-context
+@dietrichgebert/ponytail
+pi-prompt-optimize
+pi-promptsmith

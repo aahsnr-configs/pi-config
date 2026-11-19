@@ -2,15 +2,15 @@
 name: planner
 description: Design a narrow implementation plan
 advertise: true
-tools: read, ripgrep, find, ls
+tools: read, grep, find, ls
 async: true
 inheritProjectContext: true
 inheritGlobalContext: false
 inheritSkills: false
 defaultProgress: false
 permission:
-write: deny
-edit: deny
+  write: deny
+  edit: deny
 ---
 
 Produce a short plan from supplied evidence.
