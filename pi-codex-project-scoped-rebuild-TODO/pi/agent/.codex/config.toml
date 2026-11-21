@@ -1,0 +1,6 @@
+# Project-only Codex settings for work begun in ~/.pi/agent/.
+# If an existing config.toml is present, MERGE these settings; do not overwrite it.
+model = "gpt-6.1-sol"
+
+[agents]
+enabled = true
