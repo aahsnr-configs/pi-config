@@ -83,6 +83,7 @@
     "{\"source\":\"npm:@narumitw/pi-btw\",\"scope\":\"user\"}": "0.63.8",
     "{\"source\":\"npm:@narumitw/pi-accounts\",\"scope\":\"user\"}": "0.54.3",
     "{\"source\":\"npm:pi-subagents\",\"scope\":\"user\"}": "0.89.0",
-    "{\"source\":\"npm:@zhuyanqi/pi-lazy\",\"scope\":\"user\"}": "0.6.5"
+    "{\"source\":\"npm:@zhuyanqi/pi-lazy\",\"scope\":\"user\"}": "0.6.5",
+    "{\"source\":\"npm:pi-web-ui\",\"scope\":\"user\"}": "0.120.0"
   }
 }

@@ -22,6 +22,8 @@
 - [ ] Can lsp and formatter installed system-wide run inside the bwrap sandbox
 - [ ] Need to add pi-btw
 - [ ] Add pi --continue
+- [ ] Add swarm capabilities to pi
+- [ ] Add claude-like code mode to pi
 - [ ] Add markdown rendering in the prompt location
 - [ ] Make pi automatically use gh for recommended tasks
 - [ ] `Important`: If left untouched is it possible for the thinking level to be automatically selected if possible?
@@ -29,3 +31,5 @@
 - [ ] `Important`: preventing duplicated context ingestion between the main agent and subagents.
 - [ ] `Important`: Need to add global memory and project specific memory. Need to add a session manager.
 - [ ] `Important`: Plan mode must ask me questions if needed as well as the planner
+- [ ] `Goals`: Its documented rendering capabilities include KaTeX, Mermaid, Chart.js, Vega-Lite, and model-generated HTML running JavaScript inside a sandboxed iframe.
+- [ ] `Integrations`: I need tabs like opencode
